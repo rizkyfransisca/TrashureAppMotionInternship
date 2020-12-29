@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#F8F8F8"
+    android:layout_height="match_parent"
+    tools:context=".KonfirmasiPenukaranAct">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarKonfirmasi"
+            app:buttonGravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:backgroundTint="@color/white"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ToolbarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:titleTextAppearance="@style/Toolbar.TitleText1"
+            app:titleTextColor="@color/blue_primary_new" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:elevation="1.3dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/bg_white"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="48dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout8">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_marginTop="28dp"
+            android:layout_marginStart="35dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/ic_gambar_hp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginStart="16dp"
+                android:text="Pulsa"
+                android:textSize="18sp"
+                android:fontFamily="@font/sfprobold"
+                android:textColor="@color/black_eightyfivepercent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="31dp"
+            android:background="#F8F8F8" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginStart="33dp"
+            android:layout_marginTop="41dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_marginBottom="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_alignParentStart="true"
+                    android:textSize="14sp"
+                    android:text="Jenis Layanan"
+                    android:fontFamily="@font/sfproregular"
+                    android:textColor="@color/black_eightyfivepercent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_alignParentEnd="true"
+                    android:textSize="14sp"
+                    android:text="Tri Indonesia"
+                    android:fontFamily="@font/sfpromedium"
+                    android:textColor="@color/black_eightyfivepercent"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginBottom="24dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_alignParentStart="true"
+                    android:textSize="14sp"
+                    android:text="Nomor"
+                    android:fontFamily="@font/sfproregular"
+                    android:textColor="@color/black_eightyfivepercent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_alignParentEnd="true"
+                    android:textSize="14sp"
+                    android:text="08992220222"
+                    android:fontFamily="@font/sfpromedium"
+                    android:textColor="@color/black_eightyfivepercent"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginBottom="41dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_alignParentStart="true"
+                    android:textSize="14sp"
+                    android:text="Pulsa"
+                    android:fontFamily="@font/sfproregular"
+                    android:textColor="@color/black_eightyfivepercent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_alignParentEnd="true"
+                    android:textSize="14sp"
+                    android:text="5.000"
+                    android:fontFamily="@font/sfpromedium"
+                    android:textColor="@color/black_eightyfivepercent"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view3"
+            android:layout_marginBottom="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#F8F8F8" />
+
+        <RelativeLayout
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="33dp"
+            android:layout_marginBottom="41dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_alignParentStart="true"
+                android:textSize="14sp"
+                android:text="Pulsa"
+                android:fontFamily="@font/sfproregular"
+                android:textColor="@color/black_eightyfivepercent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_alignParentEnd="true"
+                android:textSize="14sp"
+                android:text="Rp. 6.000"
+                android:fontFamily="@font/sfpromedium"
+                android:textColor="@color/black_eightyfivepercent"
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btTukarPenukaran"
+            android:textColor="@color/white"
+            android:layout_gravity="bottom"
+            android:height="54dp"
+            android:text="Tukar"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="28dp"
+            android:background="@drawable/bg_orange_button"
+            android:layout_marginStart="33dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="33dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterAct">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/sfpromedium"
+            android:text="Daftar"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="78dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="70dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.733"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            app:boxStrokeColor="@color/edit_text_box_border"
+            app:endIconTint="@color/black"
+            app:hintEnabled="false"
+            app:hintTextColor="@color/black"
+            app:startIconDrawable="@drawable/ic_nama"
+            app:startIconTint="@color/green_primary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/sfpromedium"
+                android:hint="Nama"
+                android:inputType="text"
+                android:textColor="@color/black_fiftypercent"
+                android:textColorHint="@color/black_fiftypercent" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_marginTop="12dp"
+            app:boxStrokeColor="@color/edit_text_box_border"
+            app:endIconTint="@color/black"
+            app:hintEnabled="false"
+            app:hintTextColor="@color/black"
+            app:startIconDrawable="@drawable/ic_email"
+            app:startIconTint="@color/green_primary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/sfpromedium"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black_fiftypercent"
+                android:textColorHint="@color/black_fiftypercent" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_marginTop="12dp"
+            app:boxStrokeColor="@color/edit_text_box_border"
+            app:endIconTint="@color/black"
+            app:hintEnabled="false"
+            app:hintTextColor="@color/black"
+            app:startIconDrawable="@drawable/ic_telepon"
+            app:startIconTint="@color/green_primary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/sfpromedium"
+                android:hint="Nomor HP"
+                android:inputType="phone"
+                android:textColor="@color/black_fiftypercent"
+                android:textColorHint="@color/black_fiftypercent" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_marginTop="12dp"
+            android:hint="Enter Password"
+            app:boxStrokeColor="@color/edit_text_box_border"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/black_twentypercent"
+            app:hintEnabled="false"
+            app:hintTextColor="@color/black"
+            app:startIconDrawable="@drawable/ic_password"
+            app:startIconTint="@color/green_primary">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/sfpromedium"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="@color/black_fiftypercent"
+                android:textColorHint="@color/black_fiftypercent" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg_btn_primary"
+        android:fontFamily="@font/sfpromedium"
+        android:text="MASUK"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textview2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="22dp"
+        android:fontFamily="@font/sfpromedium"
+        android:text="atau masuk dengan"
+        android:textAllCaps="false"
+        android:textColor="@color/black_twentypercent"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearlayout1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview2">
+
+        <LinearLayout
+            android:id="@+id/btn_google"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/bg_btn_primary"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/ic_google_icon" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_back"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/bg_btn_primary"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0">
+
+            <ImageView
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:src="@drawable/ic_facebook_icon" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearlayout1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sfpromedium"
+            android:text="Belum punya akun Trashure ?"
+            android:textColor="@color/black_eightyfivepercent"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tvGoToLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/sfpromedium"
+            android:text="MASUK"
+            android:textColor="@color/blue_primary_new"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
